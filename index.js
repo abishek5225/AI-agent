@@ -1,11 +1,8 @@
-    import OpenAI from "openai";
+  const { GoogleGenerativeAI } = require("@google/generative-ai");
+  const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
-const OPEN_AI_API_KEY =
-  "";//enter your openai api key here
 
-const client = new OpenAI({
-    apiKey: OPEN_AI_API_KEY,
-});
 
 //Tools for LLM
 function aboutMe(Aboutme = '') {
@@ -16,7 +13,7 @@ function aboutMe(Aboutme = '') {
 }
 const user = "What is your name?";
 client.chat.completions.create({
-    model:"gpt-4",
+    model:"",
     messages: [{ role: "user", content: user }],
 }).then(response => {
     console.log(response.choices[0].message.content);

@@ -1,1 +1,17 @@
+    #.env files
+    .env
+
+    #log files
+    .log
+
+    #ignore node_modules
     node_modules/
+
+    config/secrets.json
+
+    #ignore .DS_Store
+    .DS_Store
+
+    #gemmini
+    gemmini/
+    gemmini-config.json
