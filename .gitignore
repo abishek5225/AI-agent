@@ -1,25 +1,27 @@
-    #.env files
-    .env
 
-    #log files
-    .log
+# Ignore log files
+*.log
 
-    #ignore node_modules
-    node_modules/
+# Ignore node_modules directory
+node_modules/
 
-    config/secrets.json
+# Ignore config/secrets.json file
+config/secrets.json
 
-    #ignore .DS_Store
-    .DS_Store
+# Ignore .DS_Store files
+.DS_Store
 
-    #gemmini
-    gemmini/
-    gemmini-config.json
+# Ignore gemmini directory and config file
+gemmini/
+gemmini-config.json
 
-    types/
-    types-config.json
-    google/
-    
+# Ignore types directory and config file
+types/
+types-config.json
 
-    .bin/
-    .google/
+# Ignore google directory
+google/
+
+# Ignore .bin and .google directories
+.bin/
+.google/
