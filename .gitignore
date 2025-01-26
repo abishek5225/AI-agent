@@ -15,3 +15,11 @@
     #gemmini
     gemmini/
     gemmini-config.json
+
+    types/
+    types-config.json
+    google/
+    
+
+    .bin/
+    .google/
